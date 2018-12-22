@@ -7,11 +7,13 @@ import { RiversService } from '../rivers.service';
 })
 export class RiversComponent implements OnInit {
   rivers;
+  samples;
 
   constructor(private service: RiversService) { }
 
   ngOnInit() {
     this.rivers = this.service.getRivers();
+    this.samples = this.service.getSamples();
   }
 
 }

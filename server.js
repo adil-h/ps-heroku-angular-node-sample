@@ -36,7 +36,7 @@ else {
   var client = new Client();
 
   app.get('/server_api/api/v1/rivers', function(req, res) {
-    client.get("http://riverbrain.com/api/v1/rivers", function (data, response) {
+    client.get("http://localhost:8080/api/v1/rivers", function (data, response) {
         res.send(data);
     });
   });

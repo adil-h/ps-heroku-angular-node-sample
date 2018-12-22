@@ -20,3 +20,18 @@
   <div class="double-bounce1"></div>
   <div class="double-bounce2"></div>
 </div>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>River</th>
+      <th>Run</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let sample of samples | async">
+      <td>{{sample.id}}</td>
+      <td>{{sample.col}}</td>
+    </tr>
+  </tbody>
+</table>
